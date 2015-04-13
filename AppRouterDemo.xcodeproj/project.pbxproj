@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		59935593C782D823D891EB80 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3F8687590014A3B0AC68BA /* libPods.a */; };
+		856433771ADB5EE100236735 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 856433761ADB5EE100236735 /* main.m */; };
+		8564337A1ADB5EE100236735 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 856433791ADB5EE100236735 /* AppDelegate.m */; };
+		8564337D1ADB5EE100236735 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8564337C1ADB5EE100236735 /* ViewController.m */; };
+		856433801ADB5EE100236735 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8564337E1ADB5EE100236735 /* Main.storyboard */; };
+		856433821ADB5EE100236735 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 856433811ADB5EE100236735 /* Images.xcassets */; };
+		856433851ADB5EE100236735 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 856433831ADB5EE100236735 /* LaunchScreen.xib */; };
+		856433911ADB5EE100236735 /* AppRouterDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 856433901ADB5EE100236735 /* AppRouterDemoTests.m */; };
+		8564339F1ADB63B400236735 /* SystemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8564339E1ADB63B400236735 /* SystemViewController.m */; };
+		856433A21ADB63BF00236735 /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856433A11ADB63BF00236735 /* PaymentViewController.m */; };
+		856433A51ADB63DB00236735 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856433A41ADB63DB00236735 /* AccountViewController.m */; };
+		859E1CA61ADB9C4D00761AEB /* RouterRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = 859E1CA51ADB9C4D00761AEB /* RouterRegister.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8564338B1ADB5EE100236735 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 856433691ADB5EE100236735 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 856433701ADB5EE100236735;
+			remoteInfo = AppRouterDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07F7CB067DB88F6EF1E420C7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		0C66E6ED6F69004D1B7ECF2E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		3E3F8687590014A3B0AC68BA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		856433711ADB5EE100236735 /* AppRouterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppRouterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		856433751ADB5EE100236735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		856433761ADB5EE100236735 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		856433781ADB5EE100236735 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		856433791ADB5EE100236735 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8564337B1ADB5EE100236735 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8564337C1ADB5EE100236735 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8564337F1ADB5EE100236735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		856433811ADB5EE100236735 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		856433841ADB5EE100236735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8564338A1ADB5EE100236735 /* AppRouterDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppRouterDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8564338F1ADB5EE100236735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		856433901ADB5EE100236735 /* AppRouterDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppRouterDemoTests.m; sourceTree = "<group>"; };
+		8564339D1ADB63B400236735 /* SystemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemViewController.h; sourceTree = "<group>"; };
+		8564339E1ADB63B400236735 /* SystemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemViewController.m; sourceTree = "<group>"; };
+		856433A01ADB63BF00236735 /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
+		856433A11ADB63BF00236735 /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
+		856433A31ADB63DB00236735 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		856433A41ADB63DB00236735 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
+		859E1CA41ADB9C4D00761AEB /* RouterRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouterRegister.h; sourceTree = "<group>"; };
+		859E1CA51ADB9C4D00761AEB /* RouterRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouterRegister.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8564336E1ADB5EE100236735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59935593C782D823D891EB80 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		856433871ADB5EE100236735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		856433681ADB5EE100236735 = {
+			isa = PBXGroup;
+			children = (
+				856433731ADB5EE100236735 /* AppRouterDemo */,
+				8564338D1ADB5EE100236735 /* AppRouterDemoTests */,
+				856433721ADB5EE100236735 /* Products */,
+				C0D58F8CB2827730A473D069 /* Pods */,
+				BDACE4B6FE57E30BE92A1950 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		856433721ADB5EE100236735 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				856433711ADB5EE100236735 /* AppRouterDemo.app */,
+				8564338A1ADB5EE100236735 /* AppRouterDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		856433731ADB5EE100236735 /* AppRouterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8564339C1ADB638E00236735 /* System */,
+				8564339B1ADB637300236735 /* Payment */,
+				8564339A1ADB636C00236735 /* Account */,
+				856433781ADB5EE100236735 /* AppDelegate.h */,
+				856433791ADB5EE100236735 /* AppDelegate.m */,
+				859E1CA41ADB9C4D00761AEB /* RouterRegister.h */,
+				859E1CA51ADB9C4D00761AEB /* RouterRegister.m */,
+				8564337B1ADB5EE100236735 /* ViewController.h */,
+				8564337C1ADB5EE100236735 /* ViewController.m */,
+				8564337E1ADB5EE100236735 /* Main.storyboard */,
+				856433811ADB5EE100236735 /* Images.xcassets */,
+				856433831ADB5EE100236735 /* LaunchScreen.xib */,
+				856433741ADB5EE100236735 /* Supporting Files */,
+			);
+			path = AppRouterDemo;
+			sourceTree = "<group>";
+		};
+		856433741ADB5EE100236735 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				856433751ADB5EE100236735 /* Info.plist */,
+				856433761ADB5EE100236735 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8564338D1ADB5EE100236735 /* AppRouterDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				856433901ADB5EE100236735 /* AppRouterDemoTests.m */,
+				8564338E1ADB5EE100236735 /* Supporting Files */,
+			);
+			path = AppRouterDemoTests;
+			sourceTree = "<group>";
+		};
+		8564338E1ADB5EE100236735 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8564338F1ADB5EE100236735 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8564339A1ADB636C00236735 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				856433A31ADB63DB00236735 /* AccountViewController.h */,
+				856433A41ADB63DB00236735 /* AccountViewController.m */,
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
+		8564339B1ADB637300236735 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				856433A01ADB63BF00236735 /* PaymentViewController.h */,
+				856433A11ADB63BF00236735 /* PaymentViewController.m */,
+			);
+			name = Payment;
+			sourceTree = "<group>";
+		};
+		8564339C1ADB638E00236735 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				8564339D1ADB63B400236735 /* SystemViewController.h */,
+				8564339E1ADB63B400236735 /* SystemViewController.m */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		BDACE4B6FE57E30BE92A1950 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E3F8687590014A3B0AC68BA /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0D58F8CB2827730A473D069 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C66E6ED6F69004D1B7ECF2E /* Pods.debug.xcconfig */,
+				07F7CB067DB88F6EF1E420C7 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		856433701ADB5EE100236735 /* AppRouterDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 856433941ADB5EE100236735 /* Build configuration list for PBXNativeTarget "AppRouterDemo" */;
+			buildPhases = (
+				553802794CE83838BD733F09 /* Check Pods Manifest.lock */,
+				8564336D1ADB5EE100236735 /* Sources */,
+				8564336E1ADB5EE100236735 /* Frameworks */,
+				8564336F1ADB5EE100236735 /* Resources */,
+				4E96E7DE19363B40500792B6 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppRouterDemo;
+			productName = AppRouterDemo;
+			productReference = 856433711ADB5EE100236735 /* AppRouterDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		856433891ADB5EE100236735 /* AppRouterDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 856433971ADB5EE100236735 /* Build configuration list for PBXNativeTarget "AppRouterDemoTests" */;
+			buildPhases = (
+				856433861ADB5EE100236735 /* Sources */,
+				856433871ADB5EE100236735 /* Frameworks */,
+				856433881ADB5EE100236735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8564338C1ADB5EE100236735 /* PBXTargetDependency */,
+			);
+			name = AppRouterDemoTests;
+			productName = AppRouterDemoTests;
+			productReference = 8564338A1ADB5EE100236735 /* AppRouterDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		856433691ADB5EE100236735 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = DCF;
+				TargetAttributes = {
+					856433701ADB5EE100236735 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					856433891ADB5EE100236735 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 856433701ADB5EE100236735;
+					};
+				};
+			};
+			buildConfigurationList = 8564336C1ADB5EE100236735 /* Build configuration list for PBXProject "AppRouterDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 856433681ADB5EE100236735;
+			productRefGroup = 856433721ADB5EE100236735 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				856433701ADB5EE100236735 /* AppRouterDemo */,
+				856433891ADB5EE100236735 /* AppRouterDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8564336F1ADB5EE100236735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				856433801ADB5EE100236735 /* Main.storyboard in Resources */,
+				856433851ADB5EE100236735 /* LaunchScreen.xib in Resources */,
+				856433821ADB5EE100236735 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		856433881ADB5EE100236735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E96E7DE19363B40500792B6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		553802794CE83838BD733F09 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8564336D1ADB5EE100236735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8564337D1ADB5EE100236735 /* ViewController.m in Sources */,
+				8564339F1ADB63B400236735 /* SystemViewController.m in Sources */,
+				8564337A1ADB5EE100236735 /* AppDelegate.m in Sources */,
+				856433A21ADB63BF00236735 /* PaymentViewController.m in Sources */,
+				859E1CA61ADB9C4D00761AEB /* RouterRegister.m in Sources */,
+				856433A51ADB63DB00236735 /* AccountViewController.m in Sources */,
+				856433771ADB5EE100236735 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		856433861ADB5EE100236735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				856433911ADB5EE100236735 /* AppRouterDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8564338C1ADB5EE100236735 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 856433701ADB5EE100236735 /* AppRouterDemo */;
+			targetProxy = 8564338B1ADB5EE100236735 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8564337E1ADB5EE100236735 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8564337F1ADB5EE100236735 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		856433831ADB5EE100236735 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				856433841ADB5EE100236735 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		856433921ADB5EE100236735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		856433931ADB5EE100236735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		856433951ADB5EE100236735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C66E6ED6F69004D1B7ECF2E /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AppRouterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		856433961ADB5EE100236735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07F7CB067DB88F6EF1E420C7 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AppRouterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		856433981ADB5EE100236735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AppRouterDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppRouterDemo.app/AppRouterDemo";
+			};
+			name = Debug;
+		};
+		856433991ADB5EE100236735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AppRouterDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppRouterDemo.app/AppRouterDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8564336C1ADB5EE100236735 /* Build configuration list for PBXProject "AppRouterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				856433921ADB5EE100236735 /* Debug */,
+				856433931ADB5EE100236735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		856433941ADB5EE100236735 /* Build configuration list for PBXNativeTarget "AppRouterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				856433951ADB5EE100236735 /* Debug */,
+				856433961ADB5EE100236735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		856433971ADB5EE100236735 /* Build configuration list for PBXNativeTarget "AppRouterDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				856433981ADB5EE100236735 /* Debug */,
+				856433991ADB5EE100236735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 856433691ADB5EE100236735 /* Project object */;
+}

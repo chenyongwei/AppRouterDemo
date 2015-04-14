@@ -8,7 +8,10 @@
 
 #import "AppDelegate.h"
 #import "JLRoutes.h"
-#import "RouterRegister.h"
+#import "AppHub.h"
+#import "SystemEnteraceModel.h"
+#import "AccountEnteraceModel.h"
+#import "PaymentEnteraceModel.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +22,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    [[RouterRegister new] registInternalRouters];
+    // sub events on HUB
+    [self subscribAllEvents];
+    
     return YES;
 }
 
@@ -27,6 +32,42 @@
 {
     return [JLRoutes routeURL:url];
 }
+
+
+-(void)subscribAllEvents
+{
+    AppEvent *systemModuleEnteraceEvent = ({
+        AppEvent *evt = [AppEvent new];
+        evt.eventTarget = SystemModuleEventTarget;
+        evt.eventType = EventTypeEnter;
+        evt.eventAction = EventActionPush;
+        evt.eventData = [SystemEnteraceModel new];
+        evt;
+    });
+    [[AppHub sharedInstance] sub:systemModuleEnteraceEvent];
+    
+    AppEvent *accountModuleEnteraceEvent = ({
+        AppEvent *evt = [AppEvent new];
+        evt.eventTarget = AccountModuleEventTarget;
+        evt.eventType = EventTypeEnter;
+        evt.eventAction = EventActionPush;
+        evt.eventData = [AccountEnteraceModel new];
+        evt;
+    });
+    [[AppHub sharedInstance] sub:accountModuleEnteraceEvent];
+    
+    AppEvent *paymentModuleEnteraceEvent = ({
+        AppEvent *evt = [AppEvent new];
+        evt.eventTarget = PaymentModuleEventTarget;
+        evt.eventType = EventTypeEnter;
+        evt.eventAction = EventActionPush;
+        evt.eventData = [PaymentEnteraceModel new];
+        evt;
+    });
+    [[AppHub sharedInstance] sub:paymentModuleEnteraceEvent];
+    
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

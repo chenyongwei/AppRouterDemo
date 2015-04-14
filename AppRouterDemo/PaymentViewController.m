@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.title = @"支付模块";
+
     self.view.backgroundColor = [UIColor whiteColor];
 }
 

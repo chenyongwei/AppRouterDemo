@@ -18,7 +18,14 @@
 		8564339F1ADB63B400236735 /* SystemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8564339E1ADB63B400236735 /* SystemViewController.m */; };
 		856433A21ADB63BF00236735 /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856433A11ADB63BF00236735 /* PaymentViewController.m */; };
 		856433A51ADB63DB00236735 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856433A41ADB63DB00236735 /* AccountViewController.m */; };
-		859E1CA61ADB9C4D00761AEB /* RouterRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = 859E1CA51ADB9C4D00761AEB /* RouterRegister.m */; };
+		859E1CA91ADCB41C00761AEB /* AppHub.m in Sources */ = {isa = PBXBuildFile; fileRef = 859E1CA81ADCB41C00761AEB /* AppHub.m */; };
+		859E1CAC1ADCB58B00761AEB /* AppEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 859E1CAB1ADCB58B00761AEB /* AppEvent.m */; };
+		859E1CB01ADCBD5500761AEB /* routerMap.json in Resources */ = {isa = PBXBuildFile; fileRef = 859E1CAF1ADCBD5500761AEB /* routerMap.json */; };
+		859E1CB31ADCC61D00761AEB /* SystemEnteraceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 859E1CB21ADCC61D00761AEB /* SystemEnteraceModel.m */; };
+		859E1CB61ADCC87600761AEB /* PaymentEnteraceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 859E1CB51ADCC87600761AEB /* PaymentEnteraceModel.m */; };
+		859E1CB91ADCC88800761AEB /* AccountEnteraceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 859E1CB81ADCC88800761AEB /* AccountEnteraceModel.m */; };
+		859E1CBD1ADCE07100761AEB /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 859E1CBC1ADCE07100761AEB /* BaseViewController.m */; };
+		859E1CC01ADCE1A700761AEB /* BaseDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 859E1CBF1ADCE1A700761AEB /* BaseDataModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +61,23 @@
 		856433A11ADB63BF00236735 /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
 		856433A31ADB63DB00236735 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
 		856433A41ADB63DB00236735 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
-		859E1CA41ADB9C4D00761AEB /* RouterRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouterRegister.h; sourceTree = "<group>"; };
-		859E1CA51ADB9C4D00761AEB /* RouterRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouterRegister.m; sourceTree = "<group>"; };
+		859E1CA71ADCB41C00761AEB /* AppHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppHub.h; sourceTree = "<group>"; };
+		859E1CA81ADCB41C00761AEB /* AppHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppHub.m; sourceTree = "<group>"; };
+		859E1CAA1ADCB58B00761AEB /* AppEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppEvent.h; sourceTree = "<group>"; };
+		859E1CAB1ADCB58B00761AEB /* AppEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppEvent.m; sourceTree = "<group>"; };
+		859E1CAD1ADCB61B00761AEB /* AppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppConstants.h; path = ../AppConstants.h; sourceTree = "<group>"; };
+		859E1CAE1ADCB67E00761AEB /* AppEnums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppEnums.h; sourceTree = "<group>"; };
+		859E1CAF1ADCBD5500761AEB /* routerMap.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = routerMap.json; sourceTree = "<group>"; };
+		859E1CB11ADCC61D00761AEB /* SystemEnteraceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemEnteraceModel.h; sourceTree = "<group>"; };
+		859E1CB21ADCC61D00761AEB /* SystemEnteraceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemEnteraceModel.m; sourceTree = "<group>"; };
+		859E1CB41ADCC87600761AEB /* PaymentEnteraceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentEnteraceModel.h; sourceTree = "<group>"; };
+		859E1CB51ADCC87600761AEB /* PaymentEnteraceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentEnteraceModel.m; sourceTree = "<group>"; };
+		859E1CB71ADCC88800761AEB /* AccountEnteraceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountEnteraceModel.h; sourceTree = "<group>"; };
+		859E1CB81ADCC88800761AEB /* AccountEnteraceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountEnteraceModel.m; sourceTree = "<group>"; };
+		859E1CBB1ADCE07100761AEB /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		859E1CBC1ADCE07100761AEB /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		859E1CBE1ADCE1A700761AEB /* BaseDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDataModel.h; sourceTree = "<group>"; };
+		859E1CBF1ADCE1A700761AEB /* BaseDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDataModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,13 +122,13 @@
 		856433731ADB5EE100236735 /* AppRouterDemo */ = {
 			isa = PBXGroup;
 			children = (
+				859E1CAF1ADCBD5500761AEB /* routerMap.json */,
+				859E1CC11ADCE3E700761AEB /* Router */,
 				8564339C1ADB638E00236735 /* System */,
 				8564339B1ADB637300236735 /* Payment */,
 				8564339A1ADB636C00236735 /* Account */,
 				856433781ADB5EE100236735 /* AppDelegate.h */,
 				856433791ADB5EE100236735 /* AppDelegate.m */,
-				859E1CA41ADB9C4D00761AEB /* RouterRegister.h */,
-				859E1CA51ADB9C4D00761AEB /* RouterRegister.m */,
 				8564337B1ADB5EE100236735 /* ViewController.h */,
 				8564337C1ADB5EE100236735 /* ViewController.m */,
 				8564337E1ADB5EE100236735 /* Main.storyboard */,
@@ -148,6 +170,8 @@
 			children = (
 				856433A31ADB63DB00236735 /* AccountViewController.h */,
 				856433A41ADB63DB00236735 /* AccountViewController.m */,
+				859E1CB71ADCC88800761AEB /* AccountEnteraceModel.h */,
+				859E1CB81ADCC88800761AEB /* AccountEnteraceModel.m */,
 			);
 			name = Account;
 			sourceTree = "<group>";
@@ -157,6 +181,8 @@
 			children = (
 				856433A01ADB63BF00236735 /* PaymentViewController.h */,
 				856433A11ADB63BF00236735 /* PaymentViewController.m */,
+				859E1CB41ADCC87600761AEB /* PaymentEnteraceModel.h */,
+				859E1CB51ADCC87600761AEB /* PaymentEnteraceModel.m */,
 			);
 			name = Payment;
 			sourceTree = "<group>";
@@ -166,8 +192,35 @@
 			children = (
 				8564339D1ADB63B400236735 /* SystemViewController.h */,
 				8564339E1ADB63B400236735 /* SystemViewController.m */,
+				859E1CB11ADCC61D00761AEB /* SystemEnteraceModel.h */,
+				859E1CB21ADCC61D00761AEB /* SystemEnteraceModel.m */,
 			);
 			name = System;
+			sourceTree = "<group>";
+		};
+		859E1CBA1ADCE05E00761AEB /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				859E1CBB1ADCE07100761AEB /* BaseViewController.h */,
+				859E1CBC1ADCE07100761AEB /* BaseViewController.m */,
+				859E1CBE1ADCE1A700761AEB /* BaseDataModel.h */,
+				859E1CBF1ADCE1A700761AEB /* BaseDataModel.m */,
+			);
+			name = BaseClass;
+			sourceTree = "<group>";
+		};
+		859E1CC11ADCE3E700761AEB /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				859E1CBA1ADCE05E00761AEB /* BaseClass */,
+				859E1CAD1ADCB61B00761AEB /* AppConstants.h */,
+				859E1CAE1ADCB67E00761AEB /* AppEnums.h */,
+				859E1CA71ADCB41C00761AEB /* AppHub.h */,
+				859E1CA81ADCB41C00761AEB /* AppHub.m */,
+				859E1CAA1ADCB58B00761AEB /* AppEvent.h */,
+				859E1CAB1ADCB58B00761AEB /* AppEvent.m */,
+			);
+			name = Router;
 			sourceTree = "<group>";
 		};
 		BDACE4B6FE57E30BE92A1950 /* Frameworks */ = {
@@ -270,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				856433801ADB5EE100236735 /* Main.storyboard in Resources */,
+				859E1CB01ADCBD5500761AEB /* routerMap.json in Resources */,
 				856433851ADB5EE100236735 /* LaunchScreen.xib in Resources */,
 				856433821ADB5EE100236735 /* Images.xcassets in Resources */,
 			);
@@ -322,12 +376,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				859E1CB91ADCC88800761AEB /* AccountEnteraceModel.m in Sources */,
+				859E1CBD1ADCE07100761AEB /* BaseViewController.m in Sources */,
 				8564337D1ADB5EE100236735 /* ViewController.m in Sources */,
+				859E1CB61ADCC87600761AEB /* PaymentEnteraceModel.m in Sources */,
 				8564339F1ADB63B400236735 /* SystemViewController.m in Sources */,
+				859E1CAC1ADCB58B00761AEB /* AppEvent.m in Sources */,
 				8564337A1ADB5EE100236735 /* AppDelegate.m in Sources */,
+				859E1CA91ADCB41C00761AEB /* AppHub.m in Sources */,
 				856433A21ADB63BF00236735 /* PaymentViewController.m in Sources */,
-				859E1CA61ADB9C4D00761AEB /* RouterRegister.m in Sources */,
 				856433A51ADB63DB00236735 /* AccountViewController.m in Sources */,
+				859E1CC01ADCE1A700761AEB /* BaseDataModel.m in Sources */,
+				859E1CB31ADCC61D00761AEB /* SystemEnteraceModel.m in Sources */,
 				856433771ADB5EE100236735 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,7 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.title = @"系统设置模块";
     self.view.backgroundColor = [UIColor whiteColor];
 }
 

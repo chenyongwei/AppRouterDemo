@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"账户模块";
+
     self.view.backgroundColor = [UIColor whiteColor];
 }
 

@@ -1,0 +1,14 @@
+ [
+  {
+  "routerPath": "system/",
+  "entraceViewController": "SystemViewController"
+  },
+  {
+  "routerPath": "account/",
+  "entraceViewController": "AccountViewController"
+  },
+  {
+  "routerPath": "payment/",
+  "entraceViewController": "PaymentViewController"
+  }
+]

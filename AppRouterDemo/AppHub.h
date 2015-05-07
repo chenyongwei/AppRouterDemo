@@ -10,12 +10,18 @@
 #import <UIKit/UIKit.h>
 #import "AppEvent.h"
 #import "AppConstants.h"
+#import "JLRoutes.h"
+#import "MTLJSONAdapter.h"
+#import "EnumParser.h"
+#import "BaseViewController.h"
+#import "BaseDataModel.h"
 
 @interface AppHub : NSObject
 
 +(instancetype)sharedInstance;
 
--(void)sub:(AppEvent *)evt;
--(void)pub:(AppEvent *)evt;
+-(void)subscribAllEvents;
+-(void)pub:(NSString *)router;
+-(void)pub:(NSString *)router data:(BaseDataModel *)eventData;
 
 @end

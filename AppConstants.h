@@ -6,7 +6,11 @@
 //  Copyright (c) 2015 DCF. All rights reserved.
 //
 
-#define SystemModuleEventTarget @"system/"
-#define AccountModuleEventTarget @"account/"
-#define PaymentModuleEventTarget @"payment/"
+#define JsonKeyEventAction @"eventAction"
+#define JsonKeyEventData @"eventData"
+
+#define EnterSystemModuleEventTarget @"system/enter"
+#define EnterAccountModuleEventTarget @"account/enter"
+#define LeaveAccountModuleEventTarget @"account/leave"
+#define EnterPaymentModuleEventTarget @"payment/enter"
 

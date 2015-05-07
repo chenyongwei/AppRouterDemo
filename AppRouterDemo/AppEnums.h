@@ -6,13 +6,12 @@
 //  Copyright (c) 2015 DCF. All rights reserved.
 //
 
-typedef NS_ENUM(NSInteger, EventType) {
-    EventTypeEnter,
-    EventTypeLeave
-};
-
 typedef NS_ENUM(NSInteger, EventAction) {
+    EventActionNone,
     EventActionPush,
+    EventActionPop,
     EventActionPresent,
+    EventActionDismiss,
     EventActionRoot
 };
+

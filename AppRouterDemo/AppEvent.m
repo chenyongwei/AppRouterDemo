@@ -7,7 +7,16 @@
 //
 
 #import "AppEvent.h"
+#import "EnumParser.h"
+
 
 @implementation AppEvent
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+    return @{
+             @"eventTargetClassName":@"eventTarget",
+             @"eventDataClassName":@"eventData"
+             };
+}
 
 @end

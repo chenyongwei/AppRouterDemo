@@ -20,56 +20,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
 }
 
 - (IBAction)goAccount:(id)sender {
-    AppEvent *accountModuleEnteraceEvent = ({
-        AppEvent *evt = [AppEvent new];
-        evt.eventTarget = AccountModuleEventTarget;
-        evt.eventType = EventTypeEnter;
-        evt.eventAction = EventActionPush;
-        evt.eventData = ({
-            AccountEnteraceModel *model = [AccountEnteraceModel new];
-            model.moduleName = @"账户模块";
-            model;
-        });
-        evt;
-    });
-    [[AppHub sharedInstance] pub:accountModuleEnteraceEvent];
+    AccountEnteraceModel *model = [AccountEnteraceModel new];
+    model.moduleName = @"账户模块";
+    [[AppHub sharedInstance] pub:EnterAccountModuleEventTarget data:model];
 }
 
 - (IBAction)goPayment:(id)sender {
-    AppEvent *paymentModuleEnteraceEvent = ({
-        AppEvent *evt = [AppEvent new];
-        evt.eventTarget = PaymentModuleEventTarget;
-        evt.eventType = EventTypeEnter;
-        evt.eventAction = EventActionPush;
-        evt.eventData = ({
-            PaymentEnteraceModel *model = [PaymentEnteraceModel new];
-            model.moduleName = @"支付模块";
-            model;
-        });
-        evt;
-    });
-    [[AppHub sharedInstance] pub:paymentModuleEnteraceEvent];
+    PaymentEnteraceModel *model = [PaymentEnteraceModel new];
+    model.moduleName = @"支付模块";
+    [[AppHub sharedInstance] pub:EnterPaymentModuleEventTarget data:model];
+
 }
 
 - (IBAction)goSystem:(id)sender {
-    AppEvent *systemModuleEnteraceEvent = ({
-        AppEvent *evt = [AppEvent new];
-        evt.eventTarget = SystemModuleEventTarget;
-        evt.eventType = EventTypeEnter;
-        evt.eventAction = EventActionPush;
-        evt.eventData = ({
-            SystemEnteraceModel *model = [SystemEnteraceModel new];
-            model.moduleName = @"系统模块";
-            model;
-        });
-        evt;
-    });
-    [[AppHub sharedInstance] pub:systemModuleEnteraceEvent];
+    SystemEnteraceModel *model = [SystemEnteraceModel new];
+    model.moduleName = @"系统模块";
+    [[AppHub sharedInstance] pub:EnterSystemModuleEventTarget data:model];
+
 }
 
 - (void)didReceiveMemoryWarning {

@@ -8,13 +8,14 @@
 
 #import "MTLModel.h"
 #import "MTLJSONAdapter.h"
+#import "MTLValueTransformer.h"
 #import "AppEnums.h"
 
 @interface AppEvent : MTLModel<MTLJSONSerializing>
 
-@property (nonatomic) EventType eventType;
+@property (nonatomic, strong) NSString *router;
 @property (nonatomic) EventAction eventAction;
-@property (nonatomic, strong) NSString *eventTarget;
-@property (nonatomic, strong) MTLModel<MTLJSONSerializing> *eventData;
+@property (nonatomic, strong) NSString *eventTargetClassName;
+@property (nonatomic, strong) NSString *eventDataClassName;
 
 @end

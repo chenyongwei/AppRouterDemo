@@ -7,6 +7,8 @@
 //
 
 #import "AccountViewController.h"
+#import "AppHub.h"
+#import "AppConstants.h"
 
 @interface AccountViewController ()
 
@@ -19,21 +21,21 @@
     // Do any additional setup after loading the view.
 
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    UIButton *btnBack =({
+        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        btn.frame = CGRectMake(100, 100, 200, 100);
+        [btn setTitle:@"返回" forState:UIControlStateNormal];
+        [btn setBackgroundColor:[UIColor grayColor]];
+        [btn addTarget:self action:@selector(goback) forControlEvents:UIControlEventTouchUpInside];
+        btn;
+    });
+    [self.view addSubview:btnBack];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)goback
+{
+    [[AppHub sharedInstance] pub:LeaveAccountModuleEventTarget];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

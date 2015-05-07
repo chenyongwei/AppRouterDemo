@@ -1,0 +1,28 @@
+ [
+  {
+  "router": "system/enter",
+  "eventAction": "present",
+  "eventTarget": "SystemViewController",
+  "eventData" : "SystemEnteraceModel"
+  },
+  {
+  "router": "system/leave",
+  "eventAction": "dismiss"
+  },
+  {
+  "router": "account/enter",
+  "eventAction": "push",
+  "eventTarget": "AccountViewController",
+  "eventData" : "AccountEnteraceModel"
+  },
+  {
+  "router": "account/leave",
+  "eventAction": "pop"
+  },
+  {
+  "router": "payment/enter",
+  "eventAction": "push",
+  "eventTarget": "PaymentViewController",
+  "eventData" : "PaymentEnteraceModel"
+  }
+]
